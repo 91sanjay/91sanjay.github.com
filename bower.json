@@ -1,0 +1,25 @@
+{
+  "name": "91sanjay.github.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/91sanjay/91sanjay.github.com",
+  "authors": [
+    "Sanjay Rajashekhar <91sanjay@gmail.com>"
+  ],
+  "description": "Bower config",
+  "keywords": [
+    "Personal",
+    "website"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
