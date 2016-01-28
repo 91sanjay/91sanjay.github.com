@@ -1,5 +1,5 @@
 /************************************************************************************************/
-/*--------------------------------- Styles : sanjayrajashekhar.io ------------------------------*/
+/*--------------------------------- Styles : 91sanjay.github.com -------------------------------*/
 /************************************************************************************************/
 
 
@@ -141,4 +141,108 @@
         padding-left: 0;
         padding-right: 60px;
     }
+}
+
+/* =========================== Banner ========================== */
+.banner {
+    border-top: dotted 2px #ffffff;
+    background-color: #25064C;
+    height: 100px;
+}
+
+.banner-container {
+    margin-top: 25px;
+}
+
+.full-stack {
+    text-align: right;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+.full-stack-header {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline;
+}
+
+.code {
+    padding-left: 20px;
+}
+
+.typehead {
+    margin-top: 5px;
+}
+
+.element {
+    font-size: 1.6em;
+    color: #FF9D00;
+    font-family: 'Droid Sans Mono';
+    letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 992px) {
+    .full-stack-header {
+        font-size: 1.4em;
+    }
+
+    .code {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .full-stack {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .full-stack-header {
+        font-size: 1.2em;
+    }
+
+    .code {
+        font-size: 1.2em;
+    }
+
+    .typehead {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .full-stack-header {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .element {
+        font-size: 1.3em;
+    }
+}
+
+.typed-cursor{
+    color: #ffffff;
+    font-size: 1.6em;
+    padding-left: 3px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
