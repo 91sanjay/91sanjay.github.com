@@ -4,6 +4,10 @@
 
 
 /* ======================== Grid and Misc =======================*/
+body {
+    background-color: #ffffff;
+}
+
 .col-centered {
     float: none;
     margin: 0 auto;
@@ -11,6 +15,29 @@
 
 .no-margin {
     margin: 0;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+}
+
+.heading h3 {
+    display: inline-block;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 35px;
+    border-bottom: solid 2px #4C01B0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.content {
+    padding-left: 10px;
+}
+
+.sub-heading {
+    margin: 25px 0;
+    font-family: 'Cabin', sans-serif;
 }
 
 /* ========================= Navigation ======================== */
@@ -121,8 +148,13 @@
 
 /* ========================= Jumbotron ======================== */
 .hero {
+    margin-top: 70px;
     background-color: #4DB0C0;
     background-image: linear-gradient(to right, #2E2E74, #4845AB);
+}
+
+.navbat-stick {
+    background-color: #4DB0C0;
 }
 
 .scene-container img {
@@ -245,4 +277,25 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* =========================== About ========================== */
+#about {
+    background-color: #f7f7f7;
+}
+
+.about-me {
+    margin: 25px 0 40px 0;
+}
+
+.about-me p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 5px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 2;
+}
+
+.highlight {
+    color: #FF9D00;
 }
