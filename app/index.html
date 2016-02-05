@@ -11,8 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
     <script type="text/javascript">WebFont.load({google: {families: ['Sacramento::latin', 'Montserrat::latin', 'Open+Sans::latin', 'Droid+Sans+Mono::latin', 'Cabin::latin']}});</script>
 </head>
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top custom-nav">
+<body data-spy="scroll" data-target="#navigation" data-offset="250">
+    <nav class="navbar navbar-default navbar-fixed-top custom-nav" id="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -27,8 +27,8 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="nav-link">About</a></li>
-                    <li><a href="#" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -72,49 +72,62 @@
                 <h3>Portfolio</h3>
             </header>
 
-            <div class="content col-xs-12 col-md-11 col-centered">
-                <section class="education">
+            <div class="col-xs-12 education">
                 <h3 class="sub-heading">Education</h3>
-                <ul class="education row">
-                    <li class="col-xs-12 col-sm-6 university">
-                        <div class="col-xs-4 col-sm-3 col-md-2 logo-holder no-padding">
-                            <img src="img/neu.png" alt="Northeastern University logo"/>
+
+                <ul class="university-list">
+                    <li class="col-xs-12 col-md-6 university">
+                        <div class="col-xs-4 col-sm-3 image-holder">
+                            <img class="logo" src="img/neu.png" alt=""/>
                         </div>
-                        <div class="col-xs-8 col-sm-9 col-md-10 university-name">
-                            <h4>Northeastern University</h4>
-                            <p>MS in Computer Science</p>
-                            <p>Sept 2013 - Dec 2015</p>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 university">
-                        <div class="col-xs-4 col-sm-3 col-md-2 logo-holder no-padding">
-                            <img src="img/sjbit.jpg" alt="SJBIT logo"/>
-                        </div>
-                        <div class="col-xs-8 col-sm-9 col-md-10 university-name">
-                            <h4>SJB Institute of Technology</h4>
-                            <p>BE in Computer Science</p>
-                            <p>Aug 2009 - Jun 2013</p>
+                        <div class="col-xs-8 col-md-9 university-details">
+                            <h4 class="university-name">Northeastern University</h4>
+
+                            <p class="degree">Masters in Computer Science</p>
+
+                            <p class="date">Sept 2013 - Dec 2015</p>
                         </div>
                     </li>
-                    <li class="col-xs-12 col-sm-6 university">
-                        <div class="col-xs-4 col-sm-3 col-md-2 logo-holder no-padding">
-                            <img src="img/udacity.svg" alt="Udacity logo"/>
+                    <li class="col-xs-12 col-md-6 university">
+                        <div class="col-xs-4 col-sm-3 image-holder">
+                            <img class="logo" src="img/udacity.svg" alt=""/>
                         </div>
-                        <div class="col-xs-8 col-sm-9 col-md-10 university-name">
-                            <h4>Udacity</h4>
-                            <p>Front End Web Developer Nanodegree</p>
-                            <p>May 2015 - Jan 2016</p>
+                        <div class="col-xs-8 col-md-9 university-details">
+                            <h4 class="university-name">Udacity</h4>
+
+                            <p class="degree">Front End Web Developer Nanodegree</p>
+
+                            <p class="date">May 2015 - Jan 2016 </p>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-6 university">
+                        <div class="col-xs-4 col-sm-3 image-holder">
+                            <img class="logo" src="img/sjbit.jpg" alt=""/>
+                        </div>
+                        <div class="col-xs-8 col-md-9 university-details">
+                            <h4 class="university-name">SJB Institute of Technology</h4>
+
+                            <p class="degree">Bachelors in Computer Science</p>
+
+                            <p class="date">Aug 2009 - Jun 2013</p>
                         </div>
                     </li>
                 </ul>
-                </section>
+            </div>
 
-                <section class="work">
-                    
-                </section>
+            <div class="col-xs-12 education">
+                <h3 class="sub-heading">Work Experience</h3>
+
+
             </div>
         </div>
+        </div>
     </section>
+    <footer class="row no-margin">
+        <div class="footer">
+            <p>Designed and Developed by <span class="highlight">Sanjay Rajashekhar</span> &#xa9;2016</p>
+        </div>
+    </footer>
 
     <script src="vendor/jquery/dist/jquery.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>

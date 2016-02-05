@@ -6,6 +6,7 @@
 /* ======================== Grid and Misc =======================*/
 body {
     background-color: #ffffff;
+    position: relative;
 }
 
 ul {
@@ -46,6 +47,15 @@ ul {
 .sub-heading {
     margin: 25px 0;
     font-family: 'Cabin', sans-serif;
+    display: inline-block;
+}
+
+.sub-heading::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-top: 2px dotted red;
 }
 
 @media screen and (max-width: 768px) {
@@ -115,6 +125,22 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+    .active a {
+        background-color: transparent !important;
+    }
+
+    .active:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 5px;
+        height: 3px;
+        background-color: #0B0B0D;
+        content: "";
+        transition: width 0.7s;
+    }
+
     .nav-link:after {
         display: block;
         position: absolute;
@@ -296,10 +322,11 @@ ul {
 /* =========================== About ========================== */
 #about {
     background-color: #f7f7f7;
+    padding: 50px 0;
 }
 
 .about-me {
-    margin: 25px 0 40px 0;
+    margin: 0 0 40px 0;
 }
 
 .about-me p {
@@ -314,36 +341,51 @@ ul {
     color: #FF9D00;
 }
 
+/* ========================= Portfolio ========================= */
+#portfolio {
+    padding: 50px 0;
+}
+
 .education {
-    list-style-type: none;
-    margin: 25px 0;
+    margin: 30px 0 40px 0;
 }
 
-.education li {
-    margin: 15px;
-}
-
-.university {
-    margin: 30px 0 !important;
-}
-
-.logo-holder img {
+.logo {
     width: 100%;
     height: auto;
 }
 
-.university-name h4 {
-    font-size: 1em;
+.university-list {
+    margin: 30px 0;
+    list-style-type: none;
+}
+
+.university {
+    padding: 25px 0;
+}
+
+.university-name {
     font-family: 'Montserrat', sans-serif;
 }
 
-.university-name p {
-    font-size: 1em;
-    line-height: 1.1;
+.degree {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
 }
 
-@media screen and (max-width: 768px) {
-    .about-me p {
-        font-size: 1.1em;
-    }
+.date {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ========================== Footer ========================= */
+.footer {
+    padding: 25px 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: inset 0 15px 10px -20px rgba(0,0,0,0.8);
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
