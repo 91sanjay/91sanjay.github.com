@@ -370,12 +370,24 @@ ul {
 
 .degree {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
 }
 
 .date {
     font-family: 'Montserrat', sans-serif;
+    color: #93989E;
 }
+
+.companies {
+    list-style-type: none;
+    text-align: center;
+    margin: 25px;
+}
+
+.role {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 /* ========================== Footer ========================= */
 .footer {
