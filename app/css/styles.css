@@ -611,6 +611,26 @@ ul {
     font-family: 'Open Sans', sans-serif;
 }
 
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-title {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.close {
+    opacity: 1;
+}
+
+.close-button {
+    font-size: 2em;
+    color: #1F1F1F;
+}
+
 @media screen and (max-width: 767px) {
     .project {
         padding: 30px 0;
