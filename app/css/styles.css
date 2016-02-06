@@ -2,7 +2,6 @@
 /*--------------------------------- Styles : 91sanjay.github.com -------------------------------*/
 /************************************************************************************************/
 
-
 /* ======================== Grid and Misc =======================*/
 body {
     background-color: #ffffff;
@@ -62,8 +61,8 @@ ul {
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot');
-    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.woff') format('woff'),
     url('../fonts/icomoon.ttf') format('truetype'),
     url('../fonts/icomoon.svg#icomoon') format('svg');
@@ -180,6 +179,7 @@ ul {
         margin-left: 15px;
     }
 }
+
 /* ========================= Navigation ======================== */
 .nav-container {
     margin: 0;
@@ -279,7 +279,7 @@ ul {
         background-color: #1F1F1F;
         opacity: 0.8;
     }
-    
+
     .nav-link {
         text-align: center;
         font-size: 1em;
@@ -319,9 +319,9 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-     .scene-container img {
-         width: 85%;
-     }
+    .scene-container img {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -410,7 +410,7 @@ ul {
     }
 }
 
-.typed-cursor{
+.typed-cursor {
     color: #ffffff;
     font-size: 1.6em;
     padding-left: 3px;
@@ -419,20 +419,41 @@ ul {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* =========================== About ========================== */
@@ -492,16 +513,6 @@ ul {
     color: #93989E;
 }
 
-.companies {
-    text-align: center;
-    margin: 25px;
-}
-
-.role {
-    margin-top: 15px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .icon {
     font-size: 1.6em;
     margin-right: 15px;
@@ -513,31 +524,6 @@ ul {
     border-radius: 50%;
     padding: 0.7em;
     border: 1px solid #eee;
-}
-
-.work-container {
-    background-color: #fafafa;
-    box-shadow: inset 0 15px 15px -20px rgba(0,0,0,0.7);
-    padding: 20px 0 40px 0;
-}
-
-.workexp-container {
-    padding: 20px 0;
-}
-
-.sungard {
-    padding: 5px 0;
-}
-
-.more {
-    color: #e12974;
-    padding-bottom: 2px;
-    border-bottom: 1px dotted #e12974;
-}
-
-.more:hover {
-    color: #7a26e8;
-    text-decoration: none;
 }
 
 .projects {
@@ -566,30 +552,63 @@ ul {
     padding: 20px 0 40px 0;
 }
 
-.backend, .frontend, .databases, .testing {
-    margin: 30px 0 30px 0;
-    padding: 10px 0;
+.skill-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #1F1F1F;
 }
 
-.skills-format {
-    padding-top: 25px;
+.skills-wrap {
+    margin: 20px 0;
 }
 
-.skill-icon {
-    padding-left: 20px;
-    font-size: 2.2em;
+.skills {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.1em;
+    color: #767f83;
 }
 
-.braces {
-    padding-left: 20px;
-    font-size: 2.2em;
+.process-container {
+    display: block;
 }
 
-.backend-skills li {
-    background-color: #000088;
-    border-radius: 10px;
-    padding: 10px 20px;
-    color: #FFFFFF;
+.process-container img {
+    width: 100%;
+    height: auto;
+}
+
+.work-container {
+    background-color: #fafafa;
+    box-shadow: inset 0 15px 15px -20px rgba(0, 0, 0, 0.7);
+    padding: 20px 0 40px 0;
+}
+
+.workexp-container {
+    padding: 20px 0;
+}
+
+.sungard {
+    padding: 5px 0;
+}
+
+.more {
+    color: #e12974;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #e12974;
+}
+
+.more:hover {
+    color: #7a26e8;
+    text-decoration: none;
+}
+
+.companies {
+    text-align: center;
+    margin: 25px;
+}
+
+.role {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -600,12 +619,32 @@ ul {
     .project-name {
         font-size: 1.1em;
     }
+
+    .process-container {
+        display: none;
+    }
+
+    .skills-area {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .skill-title {
+        font-size: 1.2em;
+    }
+
+    .skills {
+        font-size: 1em;
+    }
 }
 
 /* ========================== Contact ========================= */
-
 .contact {
     background-color: #f7f7f7;
+    box-shadow: inset 0 15px 15px -20px rgba(0, 0, 0, 0.7);
+
 }
 
 .contact-me {
@@ -635,7 +674,6 @@ ul {
     color: #1F1F1F;
 }
 
-
 .resume {
     padding: 0 30px 30px 30px;
     text-align: center;
@@ -650,7 +688,6 @@ ul {
     font-size: 1.4em;
     font-family: 'Open Sans', sans-serif;
     color: #767f83;
-    /*#33172A;*/
     padding: 0 20px;
 }
 
