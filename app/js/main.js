@@ -8,4 +8,6 @@ $(document).ready(function () {
             typeSpeed: 100
         });
     });
+
+    $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
 });
