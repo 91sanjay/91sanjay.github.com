@@ -1,5 +1,5 @@
 /************************************************************************************************/
-/*--------------------------------- Styles : 91sanjay.github.com -------------------------------*/
+/*--------------------------------- Styles : 91sanjay.github.io -------------------------------*/
 /************************************************************************************************/
 
 /* ======================== Grid and Misc =======================*/
@@ -592,6 +592,7 @@ ul {
 
 .more {
     color: #e12974;
+    padding-top: 5px;
     padding-bottom: 2px;
     border-bottom: 1px dotted #e12974;
 }
@@ -645,6 +646,10 @@ ul {
     .skills-area {
         margin-left: 20px;
         margin-top: -10px;
+    }
+
+    .ahold {
+        padding-bottom: 30px;
     }
 }
 
@@ -723,4 +728,30 @@ ul {
 .footer p {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    margin: 0 15px;
+}
+
+.project-description {
+    color: #767f83;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 15px 0 15px;
+    line-height: 1.8;
+}
+
+.work-details {
+    padding: 5px 20px;
+}
+
+.work-details li {
+    padding-top: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.link {
+    font-family: 'Open Sans', sans-serif;
+    color: #e12974;
+}
+
+.duration {
+
 }
